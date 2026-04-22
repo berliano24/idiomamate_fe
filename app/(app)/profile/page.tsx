@@ -23,7 +23,7 @@ export default function ProfilePage() {
     const savedAvatar = localStorage.getItem('idiomamate_avatar');
     
     if (savedName) setDisplayName(savedName);
-    else setDisplayName('John Doe'); // default mockup
+    else setDisplayName('John Doe'); 
     
     if (savedLanguage) setLanguage(savedLanguage);
     if (savedAvatar) setAvatarUrl(savedAvatar);
