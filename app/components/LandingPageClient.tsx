@@ -23,23 +23,23 @@ const TOPICS = [
 const FEATURES = [
   {
     icon: <Video size={26} />,
-    color: 'text-[#c99614]',
-    bg: 'bg-[#FBF4E0]',
+    color: 'text-[#ffba09]',
+    bg: 'bg-[#FFF8DC]',
     title: 'Precision Matchmaking',
     desc: 'Define proficiency, goals, and icebreakers before a session. Our algorithm connects you only with partners who align with your learning style.',
     image: '/feature_matchmaking.png',
-    glow: 'bg-[#c99614]/30',
+    glow: 'bg-[#ffba09]/30',
     alt: 'Precision Matchmaking',
     layout: 'normal',
   },
   {
     icon: <MessageSquare size={26} />,
-    color: 'text-[#c99614]',
+    color: 'text-[#ffba09]',
     bg: 'bg-[#FFFBE6]',
     title: 'Dynamic Scaffolding',
     desc: 'Real-time topic suggestions, cultural trivia, and grammar prompts activate the moment a conversation stalls—so silence never wins.',
     image: '/cartoon_student.png',
-    glow: 'bg-[#c99614]/20',
+    glow: 'bg-[#ffba09]/20',
     alt: 'Dynamic Scaffolding',
     layout: 'reverse',
   },
@@ -75,7 +75,7 @@ function HeroSection() {
 
           <h1 className="text-4xl lg:text-[3.6rem] font-extrabold mb-5 tracking-tight text-[#2B2B2B] leading-[1.08]">
             Master languages through{' '}
-            <span className="bg-gradient-to-r from-[#c99614] to-[#c99614] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#ffba09] to-[#ffba09] bg-clip-text text-transparent">
               Idiomamate
             </span>
             .
@@ -88,7 +88,7 @@ function HeroSection() {
             <Link
               href="/register"
               id="hero-get-started"
-              className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#c99614] to-[#c99614] hover:from-[#a87a10] hover:to-[#a87a10] text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg shadow-[#c99614]/30 hover:shadow-xl hover:shadow-[#c99614]/40 hover:scale-105"
+              className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#ffba09] to-[#ffba09] hover:from-[#e5a500] hover:to-[#e5a500] text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg shadow-[#ffba09]/30 hover:shadow-xl hover:shadow-[#ffba09]/40 hover:scale-105"
             >
               Get Started
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -136,8 +136,8 @@ function HeroSection() {
         className="w-full lg:w-[50%] relative h-[500px] lg:h-[700px] mt-16 lg:mt-0 flex justify-end items-center"
       >
         {/* Background blobs */}
-        <div className="absolute top-[5%] right-[5%] w-[350px] h-[350px] lg:w-[550px] lg:h-[550px] bg-[#c99614] rounded-full -z-10" />
-        <div className="absolute top-[0%] right-[0%] w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] bg-[#c99614] rounded-full -z-10" />
+        <div className="absolute top-[5%] right-[5%] w-[350px] h-[350px] lg:w-[550px] lg:h-[550px] bg-[#ffba09] rounded-full -z-10" />
+        <div className="absolute top-[0%] right-[0%] w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] bg-[#ffba09] rounded-full -z-10" />
         <div className="absolute bottom-[5%] right-[-5%] w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] bg-[#434CE6] rounded-full -z-10" />
 
         {/* Hero image */}
@@ -172,7 +172,7 @@ function ScaffoldingDemo() {
       `}</style>
 
       {/* Subtle background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FBF4E0] to-slate-50 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFF8DC] to-slate-50 -z-10" />
       <div
         className="absolute inset-0 -z-10 opacity-[0.035]"
         style={{
@@ -190,7 +190,7 @@ function ScaffoldingDemo() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-bold tracking-widest text-[#c99614] uppercase">Live Demo · Visual Scaffolding</span>
+          <span className="text-xs font-bold tracking-widest text-[#ffba09] uppercase">Live Demo · Visual Scaffolding</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B2B2B] mt-3 mb-4 tracking-tight">
             Never run out of things to say.
           </h2>
@@ -213,7 +213,7 @@ function ScaffoldingDemo() {
           {[...TOPICS, ...TOPICS].map((topic, i) => (
             <div
               key={i}
-              className="relative w-[340px] shrink-0 bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl border border-white/80 p-8 flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl hover:border-[#c99614]/50 transition-all duration-300"
+              className="relative w-[340px] shrink-0 bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl border border-white/80 p-8 flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl hover:border-[#ffba09]/50 transition-all duration-300"
             >
               {/* Silence timer badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg tracking-wide whitespace-nowrap z-10">
@@ -222,7 +222,7 @@ function ScaffoldingDemo() {
 
               <div className="text-5xl mb-4 mt-2">{topic.emoji}</div>
 
-              <span className="text-[11px] font-bold tracking-widest text-[#c99614] uppercase mb-2">Suggested Topic</span>
+              <span className="text-[11px] font-bold tracking-widest text-[#ffba09] uppercase mb-2">Suggested Topic</span>
               <h3 className="text-xl font-extrabold text-[#2B2B2B] mb-3">{topic.title}</h3>
               <p className="text-[#5A5A5A] text-sm leading-relaxed font-medium italic flex-1">
                 "{topic.prompt}"
@@ -286,7 +286,7 @@ function FeatureCard({ feat, i }: { feat: typeof FEATURES[0]; i: number }) {
 
         <Link
           href="/register"
-          className="inline-flex items-center gap-2 text-[#c99614] font-semibold hover:gap-3 transition-all text-sm group"
+          className="inline-flex items-center gap-2 text-[#ffba09] font-semibold hover:gap-3 transition-all text-sm group"
         >
           Learn more <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
         </Link>
@@ -306,7 +306,7 @@ function FeaturesSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-24"
         >
-          <h2 className="text-xs font-bold tracking-widest text-[#c99614] uppercase mb-3">Core Capabilities</h2>
+          <h2 className="text-xs font-bold tracking-widest text-[#ffba09] uppercase mb-3">Core Capabilities</h2>
           <h3 className="text-4xl md:text-5xl font-extrabold text-[#2B2B2B] mb-6 tracking-tight">
             Structured architecture to prevent conversation breakdown.
           </h3>
@@ -333,14 +333,14 @@ function MethodologySection() {
   const pillars = [
     {
       icon: <BookOpen size={22} />,
-      color: 'text-[#c99614]',
-      bg: 'bg-[#FBF4E0]',
+      color: 'text-[#ffba09]',
+      bg: 'bg-[#FFF8DC]',
       title: 'Guided Learning',
       desc: 'Learn with partners who match your exact level, helping you improve naturally through practical, real-world conversations.',
     },
     {
       icon: <Zap size={22} />,
-      color: 'text-[#c99614]',
+      color: 'text-[#ffba09]',
       bg: 'bg-[#FFFBE6]',
       title: 'No More Awkward Silences',
       desc: 'Our dynamic topic cards and real-time prompts keep the conversation flowing smoothly, so you never run out of things to say.',
@@ -371,7 +371,7 @@ function MethodologySection() {
   return (
     <section id="methodology" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative blob */}
-      <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#c99614]/20 rounded-full blur-3xl opacity-50 pointer-events-none" />
+      <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#ffba09]/20 rounded-full blur-3xl opacity-50 pointer-events-none" />
 
       <div className="max-w-[1400px] mx-auto px-6">
         <motion.div
@@ -381,7 +381,7 @@ function MethodologySection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-20"
         >
-          <span className="text-xs font-bold tracking-widest text-[#c99614] uppercase">Why IdiomaMate Works</span>
+          <span className="text-xs font-bold tracking-widest text-[#ffba09] uppercase">Why IdiomaMate Works</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#2B2B2B] mt-3 mb-4 tracking-tight">
             Designed for real fluency.
           </h2>
@@ -421,7 +421,7 @@ function MethodologySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-bold tracking-widest text-[#c99614] uppercase">How It Works</span>
+          <span className="text-xs font-bold tracking-widest text-[#ffba09] uppercase">How It Works</span>
           <h3 className="text-3xl md:text-4xl font-extrabold text-[#2B2B2B] mt-3 tracking-tight">How IdioMate Works</h3>
           <p className="text-[#5A5A5A] mt-3 text-base font-medium">Your journey to fluency in four simple steps.</p>
         </motion.div>
@@ -429,14 +429,14 @@ function MethodologySection() {
         {/* Stepper row */}
         <div className="relative max-w-4xl mx-auto">
           {/* Connecting line */}
-          <div className="absolute top-[28px] left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-[2px] bg-gradient-to-r from-[#c99614] via-[#c99614] to-[#c99614] hidden md:block z-0" />
+          <div className="absolute top-[28px] left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-[2px] bg-gradient-to-r from-[#ffba09] via-[#ffba09] to-[#ffba09] hidden md:block z-0" />
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
             {[
-              { num: '01', color: 'from-[#c99614] to-[#d4a827]', title: 'Create Profile', desc: 'Set your language goals and proficiency level.' },
-              { num: '02', color: 'from-[#c99614] to-[#d4a827]', title: 'Get Matched', desc: 'Our AI finds perfect conversation partners.' },
-              { num: '03', color: 'from-[#c99614] to-[#c99614]', title: 'Practice Live', desc: 'Join interactive sessions with guidance.' },
-              { num: '04', color: 'from-[#c99614] to-[#c99614]', title: 'Track Progress', desc: 'Monitor improvements and celebrate wins.' },
+              { num: '01', color: 'from-[#ffba09] to-[#ffcf50]', title: 'Create Profile', desc: 'Set your language goals and proficiency level.' },
+              { num: '02', color: 'from-[#ffba09] to-[#ffcf50]', title: 'Get Matched', desc: 'Our AI finds perfect conversation partners.' },
+              { num: '03', color: 'from-[#ffba09] to-[#ffba09]', title: 'Practice Live', desc: 'Join interactive sessions with guidance.' },
+              { num: '04', color: 'from-[#ffba09] to-[#ffba09]', title: 'Track Progress', desc: 'Monitor improvements and celebrate wins.' },
             ].map((s, i) => (
               <motion.div
                 key={s.num}
@@ -495,7 +495,7 @@ function CtaBanner() {
           <Link
             href="/register"
             id="cta-get-started"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#c99614] to-[#c99614] hover:from-[#a87a10] hover:to-[#a87a10] text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all shadow-xl shadow-[#c99614]/30 hover:shadow-2xl hover:shadow-[#c99614]/40"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ffba09] to-[#ffba09] hover:from-[#e5a500] hover:to-[#e5a500] text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all shadow-xl shadow-[#ffba09]/30 hover:shadow-2xl hover:shadow-[#ffba09]/40"
           >
             Get Started — It&apos;s Free
             <ArrowRight size={20} />
@@ -517,7 +517,7 @@ function ExploreButtonInline() {
   return (
     <button
       onClick={handleClick}
-      className="text-[#2B2B2B] font-bold underline decoration-2 underline-offset-4 hover:text-[#c99614] hover:decoration-[#c99614] transition-all cursor-pointer bg-transparent border-none p-0"
+      className="text-[#2B2B2B] font-bold underline decoration-2 underline-offset-4 hover:text-[#ffba09] hover:decoration-[#ffba09] transition-all cursor-pointer bg-transparent border-none p-0"
     >
       Explore Platform
     </button>

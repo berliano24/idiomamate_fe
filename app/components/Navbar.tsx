@@ -60,12 +60,12 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
         <div className="navbar-left flex items-center gap-6">
           <Link href="/dashboard" className="flex items-center gap-2.5 font-bold text-lg mr-4">
             <div className="flex flex-wrap w-5 h-5 gap-[2px]">
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
             </div>
-            <span className="bg-gradient-to-r from-[#c99614] to-[#c99614] bg-clip-text text-transparent tracking-tight">IDIOMAMATE</span>
+            <span className="bg-gradient-to-r from-[#ffba09] to-[#ffba09] bg-clip-text text-transparent tracking-tight">IDIOMAMATE</span>
           </Link>
           
           <nav className="hidden md:flex items-center gap-1">
@@ -77,8 +77,8 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
                   href={link.href}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     isActive 
-                      ? 'bg-gradient-to-r from-[#c99614] to-[#c99614] text-white shadow-md shadow-[#c99614]/20' 
-                      : 'text-[#5A5A5A] hover:bg-[#FBF4E0] hover:text-[#c99614]'
+                      ? 'bg-gradient-to-r from-[#ffba09] to-[#ffba09] text-white shadow-md shadow-[#ffba09]/20' 
+                      : 'text-[#5A5A5A] hover:bg-[#FFF8DC] hover:text-[#ffba09]'
                   }`}
                 >
                   {t(link.labelKey)}
@@ -113,7 +113,7 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
                   {unreadCount > 0 && (
                     <button 
                       onClick={() => setNotifications(prev => prev.map(n => ({...n, read: true})))}
-                      className="text-xs text-[#c99614] hover:text-[#a87a10] font-medium flex items-center gap-1 transition-colors"
+                      className="text-xs text-[#ffba09] hover:text-[#e5a500] font-medium flex items-center gap-1 transition-colors"
                     >
                       <Check size={12} /> {t('nav.markAllRead')}
                     </button>
@@ -127,10 +127,10 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
                       <div 
                         key={notification.id} 
                         onClick={() => setNotifications(prev => prev.filter(n => n.id !== notification.id))}
-                        className={`px-4 py-3 hover:bg-[#FFF8F0] flex gap-3 transition-colors cursor-pointer ${!notification.read ? 'bg-[#FBF4E0]/40' : ''}`}
+                        className={`px-4 py-3 hover:bg-[#FFF8F0] flex gap-3 transition-colors cursor-pointer ${!notification.read ? 'bg-[#FFF8DC]/40' : ''}`}
                       >
                         <div className={`mt-0.5 shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
-                          notification.type === 'friend_request' ? 'bg-green-100 text-green-600' : 'bg-[#FBF4E0] text-[#c99614]'
+                          notification.type === 'friend_request' ? 'bg-green-100 text-green-600' : 'bg-[#FFF8DC] text-[#ffba09]'
                         }`}>
                           {notification.type === 'friend_request' ? <UserPlus size={14} /> : <MessageSquare size={14} />}
                         </div>
@@ -141,7 +141,7 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
                           <p className="text-xs text-gray-500 mt-1">{notification.time}</p>
                         </div>
                         {!notification.read && (
-                          <div className="w-2 h-2 bg-[#c99614] rounded-full mt-1.5 shrink-0"></div>
+                          <div className="w-2 h-2 bg-[#ffba09] rounded-full mt-1.5 shrink-0"></div>
                         )}
                       </div>
                     ))
@@ -167,7 +167,7 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
                 setMobileMenuOpen(false);
               }}
             >
-              <div className="navbar-avatar bg-[#c99614]">
+              <div className="navbar-avatar bg-[#ffba09]">
                 U
                 <span className="online-dot" />
               </div>
@@ -232,7 +232,7 @@ export default function Navbar({ sidebarCollapsed, onMobileMenuToggle }: NavbarP
                 onClick={() => setMobileMenuOpen(false)}
                 className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                   isActive
-                    ? 'bg-[#FBF4E0] text-[#c99614]'
+                    ? 'bg-[#FFF8DC] text-[#ffba09]'
                     : 'text-[#5A5A5A] hover:bg-gray-50'
                 }`}
               >

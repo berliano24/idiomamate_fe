@@ -82,7 +82,7 @@ export default function ProfilePage() {
         {/* Left Sidebar / Navigation (Simulated) */}
         <div className="md:w-64 bg-gray-50 border-r border-gray-200 p-6 hidden md:block">
           <nav className="space-y-2">
-            <a href="#" className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-[#c99614] to-[#c99614] text-white font-semibold shadow-sm">
+            <a href="#" className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-[#ffba09] to-[#ffba09] text-white font-semibold shadow-sm">
               <User size={18} /> {t('profile.navProfile')}
             </a>
             <a href="#" className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-500 hover:bg-gray-100 font-medium transition-colors">
@@ -152,7 +152,7 @@ export default function ProfilePage() {
                       id="displayName"
                       value={displayName}
                       onChange={(e) => setDisplayName(e.target.value)}
-                      className="w-full bg-gray-50 border border-gray-200 rounded-lg pl-11 pr-4 py-3 focus:ring-1 focus:ring-[#c99614] focus:border-[#c99614] transition-all text-sm text-gray-900 focus:outline-none focus:bg-white shadow-sm"
+                      className="w-full bg-gray-50 border border-gray-200 rounded-lg pl-11 pr-4 py-3 focus:ring-1 focus:ring-[#ffba09] focus:border-[#ffba09] transition-all text-sm text-gray-900 focus:outline-none focus:bg-white shadow-sm"
                     />
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export default function ProfilePage() {
                     id="language"
                     value={selectedLanguage}
                     onChange={(e) => setSelectedLanguage(e.target.value as SupportedLocale)}
-                    className="w-full bg-gray-50 border border-gray-200 rounded-lg pl-11 pr-10 py-3 focus:ring-1 focus:ring-[#c99614] focus:border-[#c99614] transition-all text-sm text-gray-900 appearance-none focus:outline-none focus:bg-white cursor-pointer font-medium shadow-sm"
+                    className="w-full bg-gray-50 border border-gray-200 rounded-lg pl-11 pr-10 py-3 focus:ring-1 focus:ring-[#ffba09] focus:border-[#ffba09] transition-all text-sm text-gray-900 appearance-none focus:outline-none focus:bg-white cursor-pointer font-medium shadow-sm"
                   >
                     <option value="English">English</option>
                     <option value="Spanish">Spanish (Español)</option>
@@ -239,7 +239,7 @@ export default function ProfilePage() {
                 className={`py-3 px-8 rounded-lg font-medium shadow-sm transition-all flex items-center justify-center min-w-[140px] ${
                   isSaving
                     ? 'bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed'
-                    : 'bg-gradient-to-r from-[#c99614] to-[#c99614] hover:from-[#a87a10] hover:to-[#a87a10] text-white border border-transparent shadow-md shadow-[#c99614]/20 hover:shadow-lg hover:shadow-[#c99614]/30'
+                    : 'bg-gradient-to-r from-[#ffba09] to-[#ffba09] hover:from-[#e5a500] hover:to-[#e5a500] text-white border border-transparent shadow-md shadow-[#ffba09]/20 hover:shadow-lg hover:shadow-[#ffba09]/30'
                 }`}
               >
                 {isSaving ? (

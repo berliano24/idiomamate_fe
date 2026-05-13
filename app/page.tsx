@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-gray-900 font-sans selection:bg-[#c99614] selection:text-white flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-gray-900 font-sans selection:bg-[#ffba09] selection:text-white flex flex-col relative overflow-hidden">
 
       {/* SVG dot-pattern overlay */}
       <div
@@ -22,9 +22,9 @@ export default function LandingPage() {
       />
 
       {/* Warm glow accent */}
-      <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-[#FBF4E0]/80 blur-[120px] rounded-full -translate-x-1/4 -translate-y-1/4 pointer-events-none z-0" />
+      <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-[#FFF8DC]/80 blur-[120px] rounded-full -translate-x-1/4 -translate-y-1/4 pointer-events-none z-0" />
       {/* Cool glow accent */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#c99614]/30 blur-[100px] rounded-full translate-x-1/4 -translate-y-1/4 pointer-events-none z-0" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#ffba09]/30 blur-[100px] rounded-full translate-x-1/4 -translate-y-1/4 pointer-events-none z-0" />
 
       {/* ── Navigation ── */}
       <nav className="relative z-50 w-full pt-6">
@@ -32,10 +32,10 @@ export default function LandingPage() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="flex flex-wrap w-5 h-5 gap-[2px]">
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
-              <div className="w-[9px] h-[9px] bg-[#c99614] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
+              <div className="w-[9px] h-[9px] bg-[#ffba09] rounded-sm" />
             </div>
             <span className="text-xl font-extrabold tracking-tight text-[#2B2B2B]">IDIOMAMATE</span>
           </div>
@@ -57,7 +57,7 @@ export default function LandingPage() {
             <Link
               href="/register"
               id="nav-register-btn"
-              className="bg-gradient-to-r from-[#c99614] to-[#c99614] hover:from-[#a87a10] hover:to-[#a87a10] text-white px-6 py-2.5 rounded-xl font-semibold transition-all shadow-md shadow-[#c99614]/20 hover:shadow-lg hover:shadow-[#c99614]/30 hover:scale-105 text-[15px]"
+              className="bg-gradient-to-r from-[#ffba09] to-[#ffba09] hover:from-[#e5a500] hover:to-[#e5a500] text-white px-6 py-2.5 rounded-xl font-semibold transition-all shadow-md shadow-[#ffba09]/20 hover:shadow-lg hover:shadow-[#ffba09]/30 hover:scale-105 text-[15px]"
             >
               Register
             </Link>
@@ -74,7 +74,7 @@ export default function LandingPage() {
       <footer className="bg-white border-t border-gray-100 py-12 relative z-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 bg-gradient-to-br from-[#c99614] to-[#c99614] rounded-lg flex items-center justify-center text-white font-bold text-[10px] tracking-tighter shadow-sm">
+            <div className="w-7 h-7 bg-gradient-to-br from-[#ffba09] to-[#ffba09] rounded-lg flex items-center justify-center text-white font-bold text-[10px] tracking-tighter shadow-sm">
               iM
             </div>
             <span className="font-bold text-gray-900 tracking-tight">IdiomaMate</span>

@@ -21,7 +21,7 @@ const FRIENDS = [
     id: 1,
     name: 'Maria García',
     initials: 'MG',
-    color: '#c99614',
+    color: '#ffba09',
     language: '🇪🇸 Spanish',
     online: true,
     lastMsg: 'That sounds great! See you soon 👋',
@@ -32,7 +32,7 @@ const FRIENDS = [
     id: 2,
     name: 'Kenji Matsuda',
     initials: 'KM',
-    color: '#c99614',
+    color: '#ffba09',
     language: '🇯🇵 Japanese',
     online: true,
     lastMsg: 'Can we practice tomorrow?',
@@ -142,7 +142,7 @@ export default function FriendsPage() {
           {/* Header */}
           <div className="flex items-center gap-3 px-4 py-3 border-b border-[#f0e8de] bg-white shadow-sm shrink-0">
             <button
-              className="text-[#c99614] p-1 -ml-1 rounded-lg hover:bg-[#FBF4E0] transition-colors"
+              className="text-[#ffba09] p-1 -ml-1 rounded-lg hover:bg-[#FFF8DC] transition-colors"
               onClick={() => setSelectedFriend(null)}
               aria-label="Back to friends list"
             >
@@ -169,13 +169,13 @@ export default function FriendsPage() {
               </p>
             </div>
             <div className="flex items-center gap-0.5 shrink-0">
-              <button className="w-9 h-9 rounded-xl hover:bg-[#FBF4E0] text-gray-500 hover:text-[#c99614] transition-colors flex items-center justify-center">
+              <button className="w-9 h-9 rounded-xl hover:bg-[#FFF8DC] text-gray-500 hover:text-[#ffba09] transition-colors flex items-center justify-center">
                 <Phone size={16} />
               </button>
-              <button className="w-9 h-9 rounded-xl hover:bg-[#FBF4E0] text-gray-500 hover:text-[#c99614] transition-colors flex items-center justify-center">
+              <button className="w-9 h-9 rounded-xl hover:bg-[#FFF8DC] text-gray-500 hover:text-[#ffba09] transition-colors flex items-center justify-center">
                 <Video size={16} />
               </button>
-              <button className="w-9 h-9 rounded-xl hover:bg-[#FBF4E0] text-gray-500 hover:text-[#c99614] transition-colors flex items-center justify-center">
+              <button className="w-9 h-9 rounded-xl hover:bg-[#FFF8DC] text-gray-500 hover:text-[#ffba09] transition-colors flex items-center justify-center">
                 <MoreHorizontal size={16} />
               </button>
             </div>
@@ -196,7 +196,7 @@ export default function FriendsPage() {
                 <div
                   className={`max-w-[72%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
                     msg.from === 'me'
-                      ? 'bg-gradient-to-br from-[#c99614] to-[#c99614] text-white rounded-br-sm shadow-md shadow-[#c99614]/20'
+                      ? 'bg-gradient-to-br from-[#ffba09] to-[#ffba09] text-white rounded-br-sm shadow-md shadow-[#ffba09]/20'
                       : 'bg-white border border-[#f0e8de] text-[#2B2B2B] rounded-bl-sm shadow-sm'
                   }`}
                 >
@@ -213,7 +213,7 @@ export default function FriendsPage() {
           {/* Input */}
           <div className="px-4 py-3 border-t border-[#f0e8de] bg-white shrink-0">
             <div className="flex items-center gap-2">
-              <button className="w-9 h-9 rounded-xl text-gray-400 hover:text-[#c99614] hover:bg-[#FBF4E0] transition-colors flex items-center justify-center shrink-0">
+              <button className="w-9 h-9 rounded-xl text-gray-400 hover:text-[#ffba09] hover:bg-[#FFF8DC] transition-colors flex items-center justify-center shrink-0">
                 <Smile size={18} />
               </button>
               <input
@@ -222,12 +222,12 @@ export default function FriendsPage() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className="flex-1 bg-[#fdf8f2] border border-[#f0e8de] rounded-xl px-4 py-2.5 text-sm text-[#2B2B2B] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#c99614] focus:border-[#c99614] transition-all"
+                className="flex-1 bg-[#fdf8f2] border border-[#f0e8de] rounded-xl px-4 py-2.5 text-sm text-[#2B2B2B] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#ffba09] focus:border-[#ffba09] transition-all"
               />
               <button
                 onClick={sendMessage}
                 disabled={!input.trim()}
-                className="w-10 h-10 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#c99614] to-[#c99614] text-white shadow-md shadow-[#c99614]/25 transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
+                className="w-10 h-10 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#ffba09] to-[#ffba09] text-white shadow-md shadow-[#ffba09]/25 transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
               >
                 <Send size={15} />
               </button>
@@ -261,7 +261,7 @@ export default function FriendsPage() {
                   placeholder="Search friends…"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full bg-[#fdf8f2] border border-[#f0e8de] rounded-xl pl-9 pr-4 py-2.5 text-sm text-[#2B2B2B] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#c99614] focus:border-[#c99614] transition-all"
+                  className="w-full bg-[#fdf8f2] border border-[#f0e8de] rounded-xl pl-9 pr-4 py-2.5 text-sm text-[#2B2B2B] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#ffba09] focus:border-[#ffba09] transition-all"
                 />
               </div>
             </div>
@@ -285,7 +285,7 @@ export default function FriendsPage() {
                 <div
                   key={friend.id}
                   className={`group w-full flex items-center gap-3 px-4 py-3.5 text-left transition-all hover:bg-[#FFF8F0] border-b border-[#f0e8de]/60 cursor-pointer ${
-                    selectedFriend?.id === friend.id ? 'bg-[#FBF4E0]' : ''
+                    selectedFriend?.id === friend.id ? 'bg-[#FFF8DC]' : ''
                   }`}
                   onClick={() => openChat(friend)}
                 >
@@ -311,7 +311,7 @@ export default function FriendsPage() {
                     <div className="flex items-center justify-between mt-0.5">
                       <span className="text-xs text-[#5A5A5A] truncate">{friend.lastMsg}</span>
                       {friend.unread > 0 && (
-                        <span className="ml-2 shrink-0 min-w-[18px] h-[18px] px-1 bg-[#c99614] rounded-full text-white text-[10px] font-bold flex items-center justify-center">
+                        <span className="ml-2 shrink-0 min-w-[18px] h-[18px] px-1 bg-[#ffba09] rounded-full text-white text-[10px] font-bold flex items-center justify-center">
                           {friend.unread}
                         </span>
                       )}
@@ -322,7 +322,7 @@ export default function FriendsPage() {
                   {/* DM quick-action button */}
                   <button
                     onClick={(e) => { e.stopPropagation(); openChat(friend); }}
-                    className="shrink-0 opacity-0 group-hover:opacity-100 w-8 h-8 rounded-lg bg-[#c99614] text-white flex items-center justify-center shadow-md shadow-[#c99614]/30 transition-all hover:scale-105 active:scale-95"
+                    className="shrink-0 opacity-0 group-hover:opacity-100 w-8 h-8 rounded-lg bg-[#ffba09] text-white flex items-center justify-center shadow-md shadow-[#ffba09]/30 transition-all hover:scale-105 active:scale-95"
                     title={`Message ${friend.name}`}
                   >
                     <MessageSquare size={14} />
@@ -333,7 +333,7 @@ export default function FriendsPage() {
 
             {/* Add friend */}
             <div className="p-4 border-t border-[#f0e8de]">
-              <button className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-dashed border-[#c99614]/40 text-[#c99614] text-sm font-medium hover:bg-[#FBF4E0] transition-colors">
+              <button className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-dashed border-[#ffba09]/40 text-[#ffba09] text-sm font-medium hover:bg-[#FFF8DC] transition-colors">
                 <UserPlus size={15} /> Add Friend
               </button>
             </div>
@@ -346,7 +346,7 @@ export default function FriendsPage() {
                 {/* Chat header */}
                 <div className="flex items-center gap-3 px-5 py-3.5 border-b border-[#f0e8de] bg-white shrink-0">
                   <button
-                    className="md:hidden mr-1 text-[#c99614]"
+                    className="md:hidden mr-1 text-[#ffba09]"
                     onClick={() => setSelectedFriend(null)}
                   >
                     <ArrowLeft size={20} />
@@ -372,13 +372,13 @@ export default function FriendsPage() {
                     </p>
                   </div>
                   <div className="flex items-center gap-1">
-                    <button className="w-9 h-9 rounded-xl hover:bg-[#FBF4E0] text-gray-500 hover:text-[#c99614] transition-colors flex items-center justify-center" title="Voice Call">
+                    <button className="w-9 h-9 rounded-xl hover:bg-[#FFF8DC] text-gray-500 hover:text-[#ffba09] transition-colors flex items-center justify-center" title="Voice Call">
                       <Phone size={16} />
                     </button>
-                    <button className="w-9 h-9 rounded-xl hover:bg-[#FBF4E0] text-gray-500 hover:text-[#c99614] transition-colors flex items-center justify-center" title="Video Call">
+                    <button className="w-9 h-9 rounded-xl hover:bg-[#FFF8DC] text-gray-500 hover:text-[#ffba09] transition-colors flex items-center justify-center" title="Video Call">
                       <Video size={16} />
                     </button>
-                    <button className="w-9 h-9 rounded-xl hover:bg-[#FBF4E0] text-gray-500 hover:text-[#c99614] transition-colors flex items-center justify-center" title="More">
+                    <button className="w-9 h-9 rounded-xl hover:bg-[#FFF8DC] text-gray-500 hover:text-[#ffba09] transition-colors flex items-center justify-center" title="More">
                       <MoreHorizontal size={16} />
                     </button>
                   </div>
@@ -399,7 +399,7 @@ export default function FriendsPage() {
                       <div
                         className={`max-w-[65%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
                           msg.from === 'me'
-                            ? 'bg-gradient-to-br from-[#c99614] to-[#c99614] text-white rounded-br-sm shadow-md shadow-[#c99614]/20'
+                            ? 'bg-gradient-to-br from-[#ffba09] to-[#ffba09] text-white rounded-br-sm shadow-md shadow-[#ffba09]/20'
                             : 'bg-white border border-[#f0e8de] text-[#2B2B2B] rounded-bl-sm shadow-sm'
                         }`}
                       >
@@ -416,10 +416,10 @@ export default function FriendsPage() {
                 {/* Input bar */}
                 <div className="px-4 py-3.5 border-t border-[#f0e8de] bg-white shrink-0">
                   <div className="flex items-center gap-2">
-                    <button className="w-9 h-9 rounded-xl text-gray-400 hover:text-[#c99614] hover:bg-[#FBF4E0] transition-colors flex items-center justify-center shrink-0">
+                    <button className="w-9 h-9 rounded-xl text-gray-400 hover:text-[#ffba09] hover:bg-[#FFF8DC] transition-colors flex items-center justify-center shrink-0">
                       <Smile size={17} />
                     </button>
-                    <button className="w-9 h-9 rounded-xl text-gray-400 hover:text-[#c99614] hover:bg-[#FBF4E0] transition-colors flex items-center justify-center shrink-0">
+                    <button className="w-9 h-9 rounded-xl text-gray-400 hover:text-[#ffba09] hover:bg-[#FFF8DC] transition-colors flex items-center justify-center shrink-0">
                       <Paperclip size={17} />
                     </button>
                     <input
@@ -429,13 +429,13 @@ export default function FriendsPage() {
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
                       onKeyDown={handleKeyDown}
-                      className="flex-1 bg-[#fdf8f2] border border-[#f0e8de] rounded-xl px-4 py-3 text-sm text-[#2B2B2B] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#c99614] focus:border-[#c99614] transition-all"
+                      className="flex-1 bg-[#fdf8f2] border border-[#f0e8de] rounded-xl px-4 py-3 text-sm text-[#2B2B2B] placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#ffba09] focus:border-[#ffba09] transition-all"
                     />
                     <button
                       id="send-message-btn"
                       onClick={sendMessage}
                       disabled={!input.trim()}
-                      className="w-11 h-11 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#c99614] to-[#c99614] text-white shadow-md shadow-[#c99614]/25 hover:shadow-lg hover:shadow-[#c99614]/35 transition-all hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:scale-100 shrink-0"
+                      className="w-11 h-11 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#ffba09] to-[#ffba09] text-white shadow-md shadow-[#ffba09]/25 hover:shadow-lg hover:shadow-[#ffba09]/35 transition-all hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:scale-100 shrink-0"
                     >
                       <Send size={16} />
                     </button>
@@ -445,8 +445,8 @@ export default function FriendsPage() {
             ) : (
               /* Empty state */
               <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center px-6 bg-[#fffdf9]">
-                <div className="w-20 h-20 rounded-2xl bg-[#FBF4E0] flex items-center justify-center">
-                  <MessageSquare size={36} className="text-[#c99614]" />
+                <div className="w-20 h-20 rounded-2xl bg-[#FFF8DC] flex items-center justify-center">
+                  <MessageSquare size={36} className="text-[#ffba09]" />
                 </div>
                 <div>
                   <h2 className="text-lg font-bold text-[#2B2B2B]">Select a conversation</h2>

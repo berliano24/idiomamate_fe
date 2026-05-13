@@ -60,7 +60,7 @@ export default function LearningGoalSelector() {
           </div>
           <div>
             <h3 className="font-bold text-gray-900 text-lg flex items-center gap-2">
-              Learning {activeLang.name} <CheckCircle2 className="text-[#c99614]" size={20} />
+              Learning {activeLang.name} <CheckCircle2 className="text-[#ffba09]" size={20} />
             </h3>
             <p className="text-sm text-gray-600 font-medium">Target Level: {lvl?.label}</p>
           </div>
@@ -74,7 +74,7 @@ export default function LearningGoalSelector() {
           </button>
           <Link
             href="/find-partner?from=goal"
-            className="bg-[#c99614] hover:bg-[#a87a10] text-white px-6 py-2.5 rounded-full font-bold shadow-md transition-colors flex items-center gap-2"
+            className="bg-[#ffba09] hover:bg-[#e5a500] text-white px-6 py-2.5 rounded-full font-bold shadow-md transition-colors flex items-center gap-2"
           >
             Find a Partner <Play fill="currentColor" size={14} />
           </Link>
@@ -92,7 +92,7 @@ export default function LearningGoalSelector() {
   return (
     <div className="bg-white rounded-3xl border border-gray-100 p-6 md:p-8 mb-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] animate-fadeInUp">
       <div className="flex items-center gap-3 mb-2">
-        <div className="w-10 h-10 rounded-xl bg-[#FBF4E0] text-[#c99614] flex items-center justify-center">
+        <div className="w-10 h-10 rounded-xl bg-[#FFF8DC] text-[#ffba09] flex items-center justify-center">
           <Globe size={20} />
         </div>
         <div>
@@ -153,7 +153,7 @@ export default function LearningGoalSelector() {
                   {isActive && !showLevels && (
                     <button
                       onClick={e => { e.stopPropagation(); setShowLevels(true); }}
-                      className="mt-6 w-full py-3.5 rounded-full bg-[#c99614] hover:bg-[#a87a10] text-white font-bold text-sm shadow-lg transition-colors flex items-center justify-center gap-2"
+                      className="mt-6 w-full py-3.5 rounded-full bg-[#ffba09] hover:bg-[#e5a500] text-white font-bold text-sm shadow-lg transition-colors flex items-center justify-center gap-2"
                     >
                       <GraduationCap size={18} /> Choose level
                     </button>
@@ -169,7 +169,7 @@ export default function LearningGoalSelector() {
                             key={lv.value}
                             onClick={e => { e.stopPropagation(); setSelectedLevel(lv.value); }}
                             className={`p-3 rounded-xl text-left transition-all ${selectedLevel === lv.value
-                                ? 'bg-[#c99614] text-white shadow-md'
+                                ? 'bg-[#ffba09] text-white shadow-md'
                                 : 'bg-white/20 hover:bg-white/30 text-white'
                               }`}
                           >
@@ -188,7 +188,7 @@ export default function LearningGoalSelector() {
                         <button
                           onClick={e => { e.stopPropagation(); handleSave(); }}
                           disabled={!selectedLevel}
-                          className="flex-1 py-3 rounded-full bg-[#c99614] disabled:opacity-50 text-white font-bold text-sm transition-colors"
+                          className="flex-1 py-3 rounded-full bg-[#ffba09] disabled:opacity-50 text-white font-bold text-sm transition-colors"
                         >
                           Confirm →
                         </button>
@@ -205,7 +205,7 @@ export default function LearningGoalSelector() {
         {/* Pagination Dots */}
         <div className="absolute bottom-4 flex gap-2">
           {LANGUAGES.map((_, i) => (
-            <div key={i} className={`h-1.5 rounded-full transition-all duration-300 ${activeIndex === i ? 'w-6 bg-[#c99614]' : 'w-1.5 bg-gray-300'}`} />
+            <div key={i} className={`h-1.5 rounded-full transition-all duration-300 ${activeIndex === i ? 'w-6 bg-[#ffba09]' : 'w-1.5 bg-gray-300'}`} />
           ))}
         </div>
       </div>
